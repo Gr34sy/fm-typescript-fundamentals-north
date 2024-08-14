@@ -1,11 +1,11 @@
 //* Variable Declarations & Inference
 let temperature = 6 //! inference
-/*
-// temperature = "warm"  //! type-checking
-// const humidity = 79  //! literal type
 
-//* A type as a set of allowed values
-/*
+// temperature = "warm"  //! type-checking
+// let humidity = 79 as 79  //! literal type
+
+// A type as a set of allowed values
+
 // temperature = 23 //✔️ (1)  - re-assignability of a let
 // temperature = humidity; //! (2) - type-checking
 // humidity = temperature; //! (3) - number is not of type `79`
@@ -23,18 +23,18 @@ let temperature = 6 //! inference
 // humid2 = 78; //! Is each member in { 78 } also in { 79 }
 
 //* Implicit `any` and type annotations
-/*
-// between 500 and 1000
-// export const RANDOM_WAIT_TIME =
-//     Math.round(Math.random() * 500) + 500
 
-// let startTime = new Date()
-// let endTime
+between 500 and 1000
+export const RANDOM_WAIT_TIME =
+    Math.round(Math.random() * 500) + 500
 
-// setTimeout(() => {
-//     endTime = 0
-//     endTime = new Date()
-// }, RANDOM_WAIT_TIME)
+let startTime = new Date()
+let endTime
+
+setTimeout(() => {
+    endTime = 0
+    endTime = new Date()
+}, RANDOM_WAIT_TIME)
 
 
 //* Type Casting
